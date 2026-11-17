@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#08090b">
-<meta name="description" content="OVERA Privacy Policy explains what information the OVERA website collects and how it is handled.">
+<meta name="description" content="OVERA Privacy Policy explains how the OVERA Launcher Android app handles information on your device.">
 <title>Privacy Policy | OVERA</title>
 <style>
 :root{color-scheme:dark;--bg:#08090b;--panel:rgba(255,255,255,.045);--line:rgba(255,255,255,.13);--text:#f4f4f5;--muted:#b2b5bc;--soft:#858a93;--accent:#e8e8ea}
@@ -48,68 +48,79 @@ footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--soft);fo
   <div class="hero">
     <div class="eyebrow">Legal · Privacy</div>
     <h1>Privacy Policy</h1>
-    <p class="intro">Your privacy matters. This page explains how the OVERA website handles information when you visit or use it.</p>
-    <div class="updated">Last updated: October 27, 2026</div>
+    <p class="intro">Your privacy matters. This page explains how the OVERA Launcher Android app handles information on your device.</p>
+    <div class="updated">Last updated: November 17, 2026</div>
   </div>
   <div class="layout">
     <aside><strong>On this page</strong><ol>
-      <li><a href="#overview">Overview</a></li><li><a href="#collection">Information we collect</a></li>
+      <li><a href="#overview">Overview</a></li><li><a href="#collection">Information we handle</a></li>
       <li><a href="#permissions">Device permissions</a></li><li><a href="#cookies">Cookies and analytics</a></li>
       <li><a href="#use">How information is used</a></li><li><a href="#sharing">Sharing and third parties</a></li>
       <li><a href="#retention">Data retention and security</a></li><li><a href="#children">Children's privacy</a></li>
-      <li><a href="#rights">Your choices and rights</a></li><li><a href="#changes">Policy changes</a></li><li><a href="#contact">Contact</a></li>
+      <li><a href="#rights">Your choices and rights</a></li><li><a href="#datasafety">Data safety &amp; policy changes</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ol></aside>
     <div class="content">
-      <div class="notice"><strong>Important:</strong> This is a general website privacy-policy template for the current static OVERA HTML website. Review it against your actual hosting, analytics, forms, app features, and applicable laws before publishing. Remove or update any statement that does not match your setup.</div>
+      <div class="notice"><strong>In short:</strong> OVERA Launcher has no internet connection, no analytics, no advertising, no accounts, and no servers. It does not send your data off your device.</div>
       <section class="policy-section" id="overview"><h2>1. Overview</h2>
-        <p>OVERA (“we,” “our,” or “us”) respects your privacy. This policy describes how information may be handled when you visit the OVERA website (“Website”). The current website is intended to present information and visual previews of the OVERA experience.</p>
-        <p>By using the Website, you acknowledge this policy. If you do not agree with it, please stop using the Website.</p>
+        <p>OVERA (“we,” “our,” or “us”) provides the OVERA Launcher Android application (the “App”). This policy explains what the App does with information on your device. It applies to the App only; the OVERA website has its own separate policy.</p>
+        <p>By using the App, you acknowledge this policy. If you do not agree, please uninstall the App.</p>
       </section>
-      <section class="policy-section" id="collection"><h2>2. Information we collect</h2>
-        <p><strong>Information you provide:</strong> The current static Website does not include an account-registration system, contact form, payment feature, or user-upload feature. It therefore does not ask you to submit personal information through the page itself.</p>
-        <p><strong>Basic technical information:</strong> The hosting provider may automatically process technical data such as IP address, browser type, device information, requested pages, timestamps, and security logs to deliver and protect the Website. Whether this occurs, and how long such logs are kept, depends on your hosting provider and configuration.</p>
-        <p><strong>Clock information:</strong> The live clock uses the date and time available on your own device and displays it in your browser. The website code does not send that clock value to an OVERA server.</p>
+      <section class="policy-section" id="collection"><h2>2. Information we handle</h2>
+        <p><strong>We do not collect, transmit, or store personal information on any server.</strong> The App has no <code>INTERNET</code> permission and contains no analytics, advertising, crash-reporting, or data-collection SDKs.</p>
+        <p>The App reads and stores the following locally on your device only:</p>
+        <ul>
+          <li><strong>Installed apps list:</strong> The App reads basic information about apps that have a launcher icon (app label, package name, and icon) from Android's <code>PackageManager</code> so it can show your app drawer and alphabet index. This list is never uploaded or shared.</li>
+          <li><strong>Recently opened apps:</strong> When you tap an app in the drawer, its package name is saved locally (up to 30 entries) in private app storage to power the “Recents” screen.</li>
+          <li><strong>Preferences you choose:</strong> Your selected wallpaper, clock style, notch and alphabet display settings, and saved widget ID are stored locally in private app storage (<code>SharedPreferences</code>, <code>MODE_PRIVATE</code>).</li>
+        </ul>
+        <p>The App does not ask for your name, email address, phone number, account details, payment information, precise location, photos, contacts, messages, or call history.</p>
       </section>
       <section class="policy-section" id="permissions"><h2>3. Device permissions</h2>
-        <p>The current static Website does <strong>not request device permissions</strong>. It does not request access to your camera, microphone, contacts, photos, files, location, Bluetooth, or notifications.</p>
-        <p>The live clock uses the browser's standard local date/time function; it does not request location permission to determine your time zone. Your browser and operating system may have their own controls and privacy settings.</p>
-        <p>If future versions add features that require permissions or access to personal data, this policy should be updated before those features are released.</p>
+        <ul>
+          <li><strong>SET_WALLPAPER:</strong> Used only to apply a wallpaper that you explicitly select in the App. The App does not change your wallpaper without your action.</li>
+          <li><strong>Default launcher role:</strong> The App shows an optional “Set as Default” screen that opens the Android system settings. Choosing OVERA as your home launcher is entirely your decision and can be changed at any time in system settings.</li>
+          <li><strong>App visibility (package queries):</strong> The App asks Android for visibility of launchable apps and app widgets strictly to build the app drawer and widget picker. It does not request broad <code>QUERY_ALL_PACKAGES</code> access.</li>
+        </ul>
+        <p>The App does <strong>not</strong> request access to your camera, microphone, contacts, SMS, call logs, location, storage, notifications, accessibility services, or device identifiers such as IMEI, Android ID, advertising ID, or MAC address.</p>
       </section>
       <section class="policy-section" id="cookies"><h2>4. Cookies and analytics</h2>
-        <p>The supplied HTML website does not intentionally set cookies, use local storage, or include third-party analytics or advertising scripts. Your hosting provider, content-delivery network, or security service may use technical logs or similar technologies depending on the services you enable.</p>
-        <p>If you later add analytics, advertising, embedded media, login, or other third-party tools, those services may use cookies or similar technologies. Update this policy to identify those services and explain available choices.</p>
+        <p>The App does not use cookies, tracking storage, analytics, advertising identifiers, or third-party SDKs. It contains no embedded browser or web content that sets cookies.</p>
+        <p>Your use of external apps opened from the App, such as your browser or email app, is governed by those apps' own privacy policies.</p>
       </section>
       <section class="policy-section" id="use"><h2>5. How information is used</h2>
-        <p>Any technical information processed by the hosting or security provider may be used to:</p>
-        <ul><li>deliver the Website and its resources;</li><li>maintain reliability and diagnose errors;</li><li>detect abuse, malicious traffic, or security incidents; and</li><li>meet applicable legal obligations.</li></ul>
-        <p>The current page does not use submitted personal information for marketing because it does not provide a form or account feature.</p>
+        <p>Locally stored information is used only to provide the App's core launcher features: displaying your apps, launching apps you tap, showing recently opened apps, applying your chosen wallpaper and clock style, restoring your widget, and drawing the alphabet/notch layout.</p>
+        <p>No information is used for advertising, profiling, marketing, or automated decision-making.</p>
       </section>
-      <section class="policy-section" id="sharing"><h2>6. Sharing and third-party services</h2>
-        <p>OVERA does not sell personal information collected through the current static Website. Website files may be delivered by a hosting provider or content-delivery network, which may process technical data as part of providing the service.</p>
-        <p>Information may also be disclosed where required by law or where reasonably necessary to protect the Website, its users, or legal rights. If you add third-party services, their own privacy policies and terms may apply.</p>
+      <section class="policy-section" id="sharing"><h2>6. Sharing and third parties</h2>
+        <p>We do not sell, rent, or share any information with third parties. The App contains no third-party analytics, advertising, or social SDKs.</p>
+        <p>Some App features open other apps through standard Android intents. These actions leave the App and are governed by the destination's own privacy policy:</p>
+        <ul><li>Google Play Store, when you rate the App or share its store link;</li><li>Your device's email app, when you choose to send feedback;</li><li>Your browser, when you open a link from the sample News screen (which links to Google News), this Privacy Policy, or another external page.</li></ul>
+        <p>These links are opened only after you tap them. The App does not send them any data about you.</p>
       </section>
       <section class="policy-section" id="retention"><h2>7. Data retention and security</h2>
-        <p>The current static page does not maintain a user profile or a database of visitor accounts. Technical logs, if generated by your hosting provider, are retained according to that provider's settings and policies.</p>
-        <p>Reasonable technical and organizational measures should be used to protect the Website and its infrastructure. However, no internet transmission or storage system can be guaranteed to be completely secure.</p>
+        <p>All locally stored preferences and recent-app entries remain on your device until you clear the App's data or uninstall it. Android app backup and cloud/device-transfer extraction are disabled for the App (<code>allowBackup="false"</code>), so this data is not backed up to Google Drive or transferred as part of app data backup.</p>
+        <p>Because the App has no server and no internet access, there is no online account or database to breach. You can remove all locally stored data at any time through Android Settings → Apps → OVERA → Storage → Clear data, or by uninstalling the App.</p>
       </section>
       <section class="policy-section" id="children"><h2>8. Children's privacy</h2>
-        <p>The Website is not designed to knowingly collect personal information from children. Because the current page does not provide a registration or submission form, it does not intentionally ask children to provide personal details. If you believe a child has provided personal information through a service connected to the Website, contact the site operator so the matter can be reviewed.</p>
+        <p>The App is not directed to children under 13 (or the applicable age of digital consent in your region), and it does not knowingly collect personal information from anyone. Since the App collects no personal information at all, there is no child data for us to retain or share.</p>
+        <p>If you believe a child has provided information through a service linked from the App, please contact us.</p>
       </section>
-      <section class="policy-section" id="rights"><h2>9. Your choices and privacy rights</h2>
-        <p>Depending on where you live, you may have rights to request access to, correction of, or deletion of personal information held about you, or to object to or restrict certain processing. These rights may be subject to legal limits.</p>
-        <p>For technical logs held by your hosting provider, requests may need to be directed to that provider. You can also manage cookies and site data through your browser settings, if applicable.</p>
+      <section class="policy-section" id="rights"><h2>9. Your choices and rights</h2>
+        <p>Because we do not collect, use, store on a server, or share personal information, requests for access, correction, deletion, or portability of personal data do not apply to the App.</p>
+        <p>You remain in full control of the local data: you can clear recent apps and preferences through the App's settings where available, or clear all app data / uninstall as described above. You can also choose not to set OVERA as your default launcher and continue using your previous home app.</p>
       </section>
-      <section class="policy-section" id="changes"><h2>10. Changes to this policy</h2>
-        <p>We may update this policy when the Website, its services, or applicable requirements change. The “Last updated” date at the top will be revised when an update is made. Please review this page periodically.</p>
+      <section class="policy-section" id="datasafety"><h2>10. Data safety &amp; policy changes</h2>
+        <p>For the purposes of Google Play's Data Safety declaration: the App <strong>does not collect any data and does not share any data</strong>. It has no internet permission, no third-party SDKs, and no server-side processing.</p>
+        <p>We may update this policy if the App's features or applicable requirements change. The “Last updated” date above will be revised when we do. The current version applies to OVERA Launcher version 1.0.</p>
       </section>
       <section class="policy-section" id="contact"><h2>11. Contact</h2>
-        <p>For privacy questions or requests, contact the OVERA website operator using the official contact details published on the Website or in the app listing.</p>
-        <p><strong>Before publishing:</strong> Replace this contact instruction with a monitored privacy email address or business contact method. Do not publish the policy with missing or inaccurate contact details if your applicable law or platform requires them.</p>
+        <p>For privacy questions, requests, or concerns, contact us at <a href="mailto:sharmiltejani@gmail.com">sharmiltejani@gmail.com</a>.</p>
       </section>
     </div>
   </div>
 </main>
-<footer class="wrap"><span>© <span id="year"></span> OVERA. All rights reserved.</span><span>Privacy first · No device permissions requested by this static page</span></footer>
+<footer class="wrap"><span>© <span id="year"></span> OVERA. All rights reserved.</span><span>Privacy first · No internet access · No data collected</span></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
